@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SKB iOS Installer</title>
+  <meta charset="UTF-8">
+  <title>SKB iOS App Installer</title>
   <style>
     body {
       text-align: center;
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
+      background: #f4f4f4;
       padding-top: 100px;
     }
+    h1 {
+      font-size: 32px;
+      color: #333;
+    }
+    p {
+      font-size: 18px;
+      color: #555;
+    }
     .button {
+      display: inline-block;
+      margin-top: 20px;
       background-color: #007bff;
       color: white;
       padding: 15px 30px;
-      font-size: 18px;
-      border: none;
-      border-radius: 8px;
       text-decoration: none;
+      font-size: 18px;
+      border-radius: 8px;
     }
     .button:hover {
       background-color: #0056b3;
@@ -25,7 +35,11 @@
 </head>
 <body>
   <h1>📱 SKB iOS App Installer</h1>
-  <p>Tap below to install the iOS profile:</p>
+  <p>Tap the button below to install the iOS profile to your device.</p>
+  
+  <!-- ✅ Replace this link with your .mobileconfig file if different -->
   <a href="skb.mobileconfig" class="button">📲 Install Profile</a>
+
+  <p style="margin-top: 40px;">After tapping, go to<br><strong>Settings → Profile Downloaded</strong> to complete installation.</p>
 </body>
 </html>
