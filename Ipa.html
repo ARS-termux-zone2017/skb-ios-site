@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SKB IPA Downloader</title>
+  <title>SKB IPA Installer</title>
   <style>
     body {
       text-align: center;
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      padding-top: 100px;
+      background-color: #f0f0f0;
+      padding-top: 80px;
     }
     .button {
-      background-color: #28a745;
+      background-color: #007bff;
       color: white;
-      padding: 15px 30px;
+      padding: 14px 28px;
       font-size: 18px;
       border-radius: 8px;
       text-decoration: none;
+      margin: 10px;
+      display: inline-block;
     }
     .button:hover {
-      background-color: #218838;
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <h1>⬇️ SKB IPA Downloader</h1>
-  <p>Tap the button below to download the app (.ipa file):</p>
+  <h1>📦 SKB IPA Installer</h1>
+  <p>Choose an option below to get the app:</p>
 
-  <!-- ✅ এখানে তোমার ipa ফাইলের লিংক বসাও -->
-  <a href="https://www.dropbox.com/home/Ipa.file" class="button">⬇️ Download IPA</a>
+  <!-- 🔽 Direct IPA Download Button -->
+  <a href="skb.ipa" class="button">⬇️ Download IPA</a>
 
-  <p style="margin-top: 40px;">Use TrollStore or Sideloadly to install this IPA.</p>
+  <!-- 📲 OTA Install Button -->
+  <a href="itms-services://?action=download-manifest&url=https://ars-termux-zone2017.github.io/skb-ios-site/manifest.plist" class="button">📲 Install App (OTA)</a>
+
+  <p style="margin-top: 30px;">Note: For OTA install, app must be signed with Enterprise Certificate.</p>
 </body>
 </html>
